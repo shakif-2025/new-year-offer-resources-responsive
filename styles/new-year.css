@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Merriweather Font */
+
+.merriweather-font {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Google font : inter  */
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* shared styles */
+.main-color {
+  color: #ff0000;
+}
+.sec-color {
+  color: #070211;
+}
+/* banner styles */
+.banner {
+  width: 1320px;
+  height: 600px;
+  margin: 50px auto;
+  border-radius: 15px;
+
+  background-image: url("../assets/images/Banner\ Image.png");
+  background-image: "bg-linear-to-t from-rgba(7, 2, 17, 0.5) to-rgba(7, 2, 17, 0.25)";
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-content {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-sub-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.banner-title {
+  font-size: 80px;
+  font-weight: 900;
+  color: #ffffff;
+  /* margin-top: -5px; */
+  text-align: center;
+}
+
+/* 65% OFF section styles */
+
+.holiday-offer {
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+}
+.discount {
+  text-align: center;
+}
+.discount h2 {
+  font-size: 88px;
+  font-weight: 700;
+  margin-bottom: 45px;
+  margin-top: 120px;
+}
+.discount h5 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.discount h4 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+
+.discount-image {
+  height: 500px;
+}
+
+/* midnight party section styles */
+.midnight-party {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.midnight-party-content {
+  width: 1320px;
+  height: 600px;
+  margin: 0 auto;
+
+  background-image: url(../assets/images/Vectorrr.png);
+  background-repeat: no-repeat;
+
+  display: flex;
+  /* gap: 40; */
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left-sec-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.left-sec-description {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive media query */
+
+/* For small devices */
+
+@media screen and (max-width: 576px) {
+  /* 65% off section */
+  .holiday-offer .discount-image {
+    margin: 0 20px;
+  }
+}
